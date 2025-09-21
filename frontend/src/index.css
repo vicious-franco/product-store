@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+*{
+  font-family:"Poppins",Arial, Helvetica, sans-serif
+}
+body{
+  overflow-x: hidden;
+}
