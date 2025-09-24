@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { MyContext } from "../globalContext/Context";
 import { TiWarning } from "react-icons/ti";
+import { Link } from "react-router-dom";
 import { RiDeleteBin3Fill } from "react-icons/ri";
 
 const Products = () => {
@@ -112,12 +113,12 @@ const Products = () => {
         <div>
           <p className="text-gray-400 text-center font-semibold mt-10 text-lg">
             No Products Found 😢{" "}
-            <a
-              href="/create_product"
+            <Link
+              to="/create_product"  
               className="text-cyan-600 cursor-pointer hover:underline"
             >
               Create a Product
-            </a>
+            </Link>
           </p>
         </div>
       )}
